@@ -1,0 +1,12 @@
+class Solution {
+    public int scoreOfString(String s) {
+        int x=s.length();
+        int sum=0;
+        for(int i=0;i<=x-2;i++){
+            int a=s.charAt(i);
+            int b=s.charAt(i+1);
+            sum=sum+Math.abs(a-b);
+        }
+        return sum;
+    }
+}
